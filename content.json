@@ -47,7 +47,31 @@
   "Changes": [
     {
       "Action": "Include",
-      "FromFile": "content/ui/patches-*.json"
+      "FromFile": "content/ui/patches-cursor.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-dialog.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-hud.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-fonts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-menu-tiles.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-title.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "content/ui/patches-misc.json"
     }
   ]
 }

@@ -53,7 +53,8 @@ def main() -> None:
     for config_key, patches in sorted(grouped.items()):
         slug = config_labels.get(config_key, config_key.lower())
         out_path = OUTPUT_DIR / f"patches-{slug}.json"
-        out_path.write_text(json.dumps(patches, indent=2) + "\n", encoding="utf-8")
+        payload = {"Changes": patches}
+        out_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
         print(f"Wrote {out_path.relative_to(ROOT)} ({len(patches)} patches)")
 
 

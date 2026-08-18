@@ -1,112 +1,114 @@
-[
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/ChatButtons",
-    "FromFile": "assets/ui/LooseSprites/ChatButtons.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/ChatButtons.png": true
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/ChatButtons",
+      "FromFile": "assets/ui/LooseSprites/ChatButtons.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/ChatButtons.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/ChatButtons"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/ChatButtons"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/JournalIcons",
-    "FromFile": "assets/ui/LooseSprites/JournalIcons.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/JournalIcons.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/JournalIcons",
+      "FromFile": "assets/ui/LooseSprites/JournalIcons.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/JournalIcons.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/JournalIcons"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/JournalIcons"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/Billboard",
-    "FromFile": "assets/ui/LooseSprites/Billboard.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/Billboard.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/Billboard",
+      "FromFile": "assets/ui/LooseSprites/Billboard.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/Billboard.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/Billboard"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/Billboard"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/JunimoNote",
-    "FromFile": "assets/ui/LooseSprites/JunimoNote.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/JunimoNote.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/JunimoNote",
+      "FromFile": "assets/ui/LooseSprites/JunimoNote.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/JunimoNote.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/JunimoNote"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/JunimoNote"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/SpecialOrdersBoard",
-    "FromFile": "assets/ui/LooseSprites/SpecialOrdersBoard.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/SpecialOrdersBoard.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/SpecialOrdersBoard",
+      "FromFile": "assets/ui/LooseSprites/SpecialOrdersBoard.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/SpecialOrdersBoard.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/SpecialOrdersBoard"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/SpecialOrdersBoard"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/LanguageButtons",
-    "FromFile": "assets/ui/LooseSprites/LanguageButtons.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/LanguageButtons.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/LanguageButtons",
+      "FromFile": "assets/ui/LooseSprites/LanguageButtons.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/LanguageButtons.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/LanguageButtons"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/LanguageButtons"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/letterBG",
-    "FromFile": "assets/ui/LooseSprites/letterBG.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/letterBG.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/ui/LooseSprites/letterBG.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/letterBG.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/letterBG"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/letterBG"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/boardGameBorder",
-    "FromFile": "assets/ui/LooseSprites/boardGameBorder.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/boardGameBorder.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/boardGameBorder",
+      "FromFile": "assets/ui/LooseSprites/boardGameBorder.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/boardGameBorder.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/boardGameBorder"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/boardGameBorder"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/tailoring",
-    "FromFile": "assets/ui/LooseSprites/tailoring.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/tailoring.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/tailoring",
+      "FromFile": "assets/ui/LooseSprites/tailoring.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/tailoring.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/tailoring"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/tailoring"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/ControllerMaps",
-    "FromFile": "assets/ui/LooseSprites/ControllerMaps.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/ControllerMaps.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/ControllerMaps",
+      "FromFile": "assets/ui/LooseSprites/ControllerMaps.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/ControllerMaps.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/ControllerMaps"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/ControllerMaps"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/skillTitles",
-    "FromFile": "assets/ui/LooseSprites/skillTitles.png",
-    "When": {
-      "RecolorMisc": true,
-      "HasFile:assets/ui/LooseSprites/skillTitles.png": true
-    },
-    "LogName": "Dracula UI \u2014 LooseSprites/skillTitles"
-  }
-]
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/skillTitles",
+      "FromFile": "assets/ui/LooseSprites/skillTitles.png",
+      "When": {
+        "RecolorMisc": true,
+        "HasFile:assets/ui/LooseSprites/skillTitles.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/skillTitles"
+    }
+  ]
+}

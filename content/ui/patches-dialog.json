@@ -1,42 +1,44 @@
-[
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/DialogBox",
-    "FromFile": "assets/ui/LooseSprites/DialogBox.png",
-    "When": {
-      "RecolorDialog": true,
-      "HasFile:assets/ui/LooseSprites/DialogBox.png": true
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/DialogBox",
+      "FromFile": "assets/ui/LooseSprites/DialogBox.png",
+      "When": {
+        "RecolorDialog": true,
+        "HasFile:assets/ui/LooseSprites/DialogBox.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/DialogBox"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/DialogBox"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/DialogBoxGreen",
-    "FromFile": "assets/ui/LooseSprites/DialogBoxGreen.png",
-    "When": {
-      "RecolorDialog": true,
-      "HasFile:assets/ui/LooseSprites/DialogBoxGreen.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/DialogBoxGreen",
+      "FromFile": "assets/ui/LooseSprites/DialogBoxGreen.png",
+      "When": {
+        "RecolorDialog": true,
+        "HasFile:assets/ui/LooseSprites/DialogBoxGreen.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/DialogBoxGreen"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/DialogBoxGreen"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/chatBox",
-    "FromFile": "assets/ui/LooseSprites/chatBox.png",
-    "When": {
-      "RecolorDialog": true,
-      "HasFile:assets/ui/LooseSprites/chatBox.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/chatBox",
+      "FromFile": "assets/ui/LooseSprites/chatBox.png",
+      "When": {
+        "RecolorDialog": true,
+        "HasFile:assets/ui/LooseSprites/chatBox.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/chatBox"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/chatBox"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/textBox",
-    "FromFile": "assets/ui/LooseSprites/textBox.png",
-    "When": {
-      "RecolorDialog": true,
-      "HasFile:assets/ui/LooseSprites/textBox.png": true
-    },
-    "LogName": "Dracula UI \u2014 LooseSprites/textBox"
-  }
-]
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/textBox",
+      "FromFile": "assets/ui/LooseSprites/textBox.png",
+      "When": {
+        "RecolorDialog": true,
+        "HasFile:assets/ui/LooseSprites/textBox.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/textBox"
+    }
+  ]
+}

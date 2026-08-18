@@ -1,32 +1,34 @@
-[
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/Cursors",
-    "FromFile": "assets/ui/LooseSprites/Cursors.png",
-    "When": {
-      "RecolorCursor": true,
-      "HasFile:assets/ui/LooseSprites/Cursors.png": true
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/ui/LooseSprites/Cursors.png",
+      "When": {
+        "RecolorCursor": true,
+        "HasFile:assets/ui/LooseSprites/Cursors.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/Cursors"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/Cursors"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/Cursors_1_6",
-    "FromFile": "assets/ui/LooseSprites/Cursors_1_6.png",
-    "When": {
-      "RecolorCursor": true,
-      "HasFile:assets/ui/LooseSprites/Cursors_1_6.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/Cursors_1_6",
+      "FromFile": "assets/ui/LooseSprites/Cursors_1_6.png",
+      "When": {
+        "RecolorCursor": true,
+        "HasFile:assets/ui/LooseSprites/Cursors_1_6.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/Cursors_1_6"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/Cursors_1_6"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/Cursors2",
-    "FromFile": "assets/ui/LooseSprites/Cursors2.png",
-    "When": {
-      "RecolorCursor": true,
-      "HasFile:assets/ui/LooseSprites/Cursors2.png": true
-    },
-    "LogName": "Dracula UI \u2014 LooseSprites/Cursors2"
-  }
-]
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/ui/LooseSprites/Cursors2.png",
+      "When": {
+        "RecolorCursor": true,
+        "HasFile:assets/ui/LooseSprites/Cursors2.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/Cursors2"
+    }
+  ]
+}

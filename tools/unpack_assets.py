@@ -36,7 +36,7 @@ def find_xnbcli() -> str | None:
 def unpack_one(xnbcli: str, xnb_path: Path, out_dir: Path) -> bool:
     out_dir.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
-        [xnbcli, "unpack", str(xnb_path), "-o", str(out_dir)],
+        [xnbcli, "unpack", str(xnb_path), str(out_dir)],
         capture_output=True,
         text=True,
     )

@@ -1,32 +1,34 @@
-[
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/logo",
-    "FromFile": "assets/ui/LooseSprites/logo.png",
-    "When": {
-      "RecolorTitleScreen": true,
-      "HasFile:assets/ui/LooseSprites/logo.png": true
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/logo",
+      "FromFile": "assets/ui/LooseSprites/logo.png",
+      "When": {
+        "RecolorTitleScreen": true,
+        "HasFile:assets/ui/LooseSprites/logo.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/logo"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/logo"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/yellowLettersLogo",
-    "FromFile": "assets/ui/LooseSprites/yellowLettersLogo.png",
-    "When": {
-      "RecolorTitleScreen": true,
-      "HasFile:assets/ui/LooseSprites/yellowLettersLogo.png": true
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/yellowLettersLogo",
+      "FromFile": "assets/ui/LooseSprites/yellowLettersLogo.png",
+      "When": {
+        "RecolorTitleScreen": true,
+        "HasFile:assets/ui/LooseSprites/yellowLettersLogo.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/yellowLettersLogo"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/yellowLettersLogo"
-  },
-  {
-    "Action": "Load",
-    "Target": "Minigames/TitleButtons",
-    "FromFile": "assets/ui/Minigames/TitleButtons.png",
-    "When": {
-      "RecolorTitleScreen": true,
-      "HasFile:assets/ui/Minigames/TitleButtons.png": true
-    },
-    "LogName": "Dracula UI \u2014 Minigames/TitleButtons"
-  }
-]
+    {
+      "Action": "Load",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/ui/Minigames/TitleButtons.png",
+      "When": {
+        "RecolorTitleScreen": true,
+        "HasFile:assets/ui/Minigames/TitleButtons.png": true
+      },
+      "LogName": "Dracula UI \u2014 Minigames/TitleButtons"
+    }
+  ]
+}

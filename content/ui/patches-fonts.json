@@ -1,22 +1,24 @@
-[
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/font_bold",
-    "FromFile": "assets/ui/LooseSprites/font_bold.png",
-    "When": {
-      "RecolorFonts": true,
-      "HasFile:assets/ui/LooseSprites/font_bold.png": true
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/font_bold",
+      "FromFile": "assets/ui/LooseSprites/font_bold.png",
+      "When": {
+        "RecolorFonts": true,
+        "HasFile:assets/ui/LooseSprites/font_bold.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/font_bold"
     },
-    "LogName": "Dracula UI \u2014 LooseSprites/font_bold"
-  },
-  {
-    "Action": "Load",
-    "Target": "LooseSprites/font_colored",
-    "FromFile": "assets/ui/LooseSprites/font_colored.png",
-    "When": {
-      "RecolorFonts": true,
-      "HasFile:assets/ui/LooseSprites/font_colored.png": true
-    },
-    "LogName": "Dracula UI \u2014 LooseSprites/font_colored"
-  }
-]
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/font_colored",
+      "FromFile": "assets/ui/LooseSprites/font_colored.png",
+      "When": {
+        "RecolorFonts": true,
+        "HasFile:assets/ui/LooseSprites/font_colored.png": true
+      },
+      "LogName": "Dracula UI \u2014 LooseSprites/font_colored"
+    }
+  ]
+}
