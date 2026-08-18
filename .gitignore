@@ -17,6 +17,7 @@ tools/unpacked/
 
 # Generated UI textures (derived from the player's own game copy — never commit)
 assets/ui/**/*.png
+tools/unpacked/**/*.png
 
 # Secrets
 .env

@@ -1,0 +1,22 @@
+[
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/daybg",
+    "FromFile": "assets/ui/LooseSprites/daybg.png",
+    "When": {
+      "RecolorHud": true,
+      "HasFile:assets/ui/LooseSprites/daybg.png": true
+    },
+    "LogName": "Dracula UI \u2014 LooseSprites/daybg"
+  },
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/nightbg",
+    "FromFile": "assets/ui/LooseSprites/nightbg.png",
+    "When": {
+      "RecolorHud": true,
+      "HasFile:assets/ui/LooseSprites/nightbg.png": true
+    },
+    "LogName": "Dracula UI \u2014 LooseSprites/nightbg"
+  }
+]

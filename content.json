@@ -1,9 +1,53 @@
 {
   "Format": "2.9.0",
+  "ConfigSchema": {
+    "RecolorCursor": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor mouse cursor and pointer sprites.",
+      "Section": "Textures"
+    },
+    "RecolorDialog": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor dialogue boxes and text panels.",
+      "Section": "Textures"
+    },
+    "RecolorHud": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor the day/night HUD bar backgrounds.",
+      "Section": "Textures"
+    },
+    "RecolorFonts": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Recolor bold/colored font atlases (optional; Theme Manager handles most text).",
+      "Section": "Textures"
+    },
+    "RecolorMenuTiles": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor inventory and menu tile backgrounds.",
+      "Section": "Textures"
+    },
+    "RecolorTitleScreen": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor title screen buttons and logo frames.",
+      "Section": "Textures"
+    },
+    "RecolorMisc": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Recolor journals, boards, chat UI, and other misc interface sprites.",
+      "Section": "Textures"
+    }
+  },
   "Changes": [
     {
       "Action": "Include",
-      "FromFile": "content/ui/*.json"
+      "FromFile": "content/ui/patches-*.json"
     }
   ]
 }

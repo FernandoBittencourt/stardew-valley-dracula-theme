@@ -1,0 +1,35 @@
+{
+  "LooseSprites": {
+    "Cursors": "RecolorCursor",
+    "Cursors_1_6": "RecolorCursor",
+    "Cursors2": "RecolorCursor",
+    "DialogBox": "RecolorDialog",
+    "DialogBoxGreen": "RecolorDialog",
+    "chatBox": "RecolorDialog",
+    "textBox": "RecolorDialog",
+    "daybg": "RecolorHud",
+    "nightbg": "RecolorHud",
+    "font_bold": "RecolorFonts",
+    "font_colored": "RecolorFonts",
+    "ChatButtons": "RecolorMisc",
+    "JournalIcons": "RecolorMisc",
+    "Billboard": "RecolorMisc",
+    "JunimoNote": "RecolorMisc",
+    "SpecialOrdersBoard": "RecolorMisc",
+    "LanguageButtons": "RecolorMisc",
+    "logo": "RecolorTitleScreen",
+    "yellowLettersLogo": "RecolorTitleScreen",
+    "letterBG": "RecolorMisc",
+    "boardGameBorder": "RecolorMisc",
+    "tailoring": "RecolorMisc",
+    "ControllerMaps": "RecolorMisc",
+    "skillTitles": "RecolorMisc"
+  },
+  "Minigames": {
+    "TitleButtons": "RecolorTitleScreen"
+  },
+  "Maps": {
+    "MenuTiles": "RecolorMenuTiles",
+    "MenuTilesUncolored": "RecolorMenuTiles"
+  }
+}

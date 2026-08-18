@@ -1,0 +1,39 @@
+{
+  "config.section.textures.name": "Texturas",
+  "config.section.textures.description": "Ative grupos de textura Dracula. Requer executar o setup uma vez para gerar PNGs da sua cópia do jogo.",
+
+  "config.RecolorCursor.name": "Cursor",
+  "config.RecolorCursor.description": "Recolorir cursor e ponteiros do mouse.",
+  "config.RecolorCursor.values.true": "Ativado",
+  "config.RecolorCursor.values.false": "Desativado",
+
+  "config.RecolorDialog.name": "Caixas de diálogo",
+  "config.RecolorDialog.description": "Recolorir caixas de diálogo e painéis de texto.",
+  "config.RecolorDialog.values.true": "Ativado",
+  "config.RecolorDialog.values.false": "Desativado",
+
+  "config.RecolorHud.name": "Barra do HUD",
+  "config.RecolorHud.description": "Recolorir fundos da barra diurna/noturna.",
+  "config.RecolorHud.values.true": "Ativado",
+  "config.RecolorHud.values.false": "Desativado",
+
+  "config.RecolorFonts.name": "Fontes (atlases)",
+  "config.RecolorFonts.description": "Recolorir sprites de fonte. O Theme Manager já ajusta a maioria das cores de texto.",
+  "config.RecolorFonts.values.true": "Ativado",
+  "config.RecolorFonts.values.false": "Desativado",
+
+  "config.RecolorMenuTiles.name": "Tiles de menu",
+  "config.RecolorMenuTiles.description": "Recolorir fundos de inventário e menus.",
+  "config.RecolorMenuTiles.values.true": "Ativado",
+  "config.RecolorMenuTiles.values.false": "Desativado",
+
+  "config.RecolorTitleScreen.name": "Tela de título",
+  "config.RecolorTitleScreen.description": "Recolorir botões e molduras da tela inicial.",
+  "config.RecolorTitleScreen.values.true": "Ativado",
+  "config.RecolorTitleScreen.values.false": "Desativado",
+
+  "config.RecolorMisc.name": "UI diversa",
+  "config.RecolorMisc.description": "Diário, quadros, chat e outros sprites de interface.",
+  "config.RecolorMisc.values.true": "Ativado",
+  "config.RecolorMisc.values.false": "Desativado"
+}

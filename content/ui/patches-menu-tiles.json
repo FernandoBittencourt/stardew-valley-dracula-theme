@@ -1,0 +1,22 @@
+[
+  {
+    "Action": "Load",
+    "Target": "Maps/MenuTiles",
+    "FromFile": "assets/ui/Maps/MenuTiles.png",
+    "When": {
+      "RecolorMenuTiles": true,
+      "HasFile:assets/ui/Maps/MenuTiles.png": true
+    },
+    "LogName": "Dracula UI \u2014 Maps/MenuTiles"
+  },
+  {
+    "Action": "Load",
+    "Target": "Maps/MenuTilesUncolored",
+    "FromFile": "assets/ui/Maps/MenuTilesUncolored.png",
+    "When": {
+      "RecolorMenuTiles": true,
+      "HasFile:assets/ui/Maps/MenuTilesUncolored.png": true
+    },
+    "LogName": "Dracula UI \u2014 Maps/MenuTilesUncolored"
+  }
+]

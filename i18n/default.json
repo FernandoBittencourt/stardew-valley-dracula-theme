@@ -1,0 +1,39 @@
+{
+  "config.section.textures.name": "Textures",
+  "config.section.textures.description": "Toggle Dracula texture groups. Requires running setup once to generate PNGs from your game copy.",
+
+  "config.RecolorCursor.name": "Cursor",
+  "config.RecolorCursor.description": "Recolor mouse cursor and pointer sprites.",
+  "config.RecolorCursor.values.true": "Enabled",
+  "config.RecolorCursor.values.false": "Disabled",
+
+  "config.RecolorDialog.name": "Dialog boxes",
+  "config.RecolorDialog.description": "Recolor dialogue boxes and text panels.",
+  "config.RecolorDialog.values.true": "Enabled",
+  "config.RecolorDialog.values.false": "Disabled",
+
+  "config.RecolorHud.name": "HUD bar",
+  "config.RecolorHud.description": "Recolor the day/night HUD bar backgrounds.",
+  "config.RecolorHud.values.true": "Enabled",
+  "config.RecolorHud.values.false": "Disabled",
+
+  "config.RecolorFonts.name": "Font atlases",
+  "config.RecolorFonts.description": "Recolor bold/colored font sprites. Theme Manager already adjusts most text colors.",
+  "config.RecolorFonts.values.true": "Enabled",
+  "config.RecolorFonts.values.false": "Disabled",
+
+  "config.RecolorMenuTiles.name": "Menu tiles",
+  "config.RecolorMenuTiles.description": "Recolor inventory and menu backgrounds.",
+  "config.RecolorMenuTiles.values.true": "Enabled",
+  "config.RecolorMenuTiles.values.false": "Disabled",
+
+  "config.RecolorTitleScreen.name": "Title screen",
+  "config.RecolorTitleScreen.description": "Recolor title screen buttons and logo frames.",
+  "config.RecolorTitleScreen.values.true": "Enabled",
+  "config.RecolorTitleScreen.values.false": "Disabled",
+
+  "config.RecolorMisc.name": "Misc UI",
+  "config.RecolorMisc.description": "Journals, boards, chat UI, and other interface sprites.",
+  "config.RecolorMisc.values.true": "Enabled",
+  "config.RecolorMisc.values.false": "Disabled"
+}

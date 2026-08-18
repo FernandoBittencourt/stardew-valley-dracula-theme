@@ -2,8 +2,9 @@
 """
 Generate Dracula-themed UI PNGs from the player's own Stardew Valley install.
 
-This script never ships ConcernedApe assets in the repository. You must own the
-game and point --input at PNGs extracted from YOUR copy (see tools/README.md).
+Same approach as sqbr/Stardew-Valley-Mod-Tools (Starry Blue UI, etc.): read vanilla
+sprites from YOUR unpacked Content folder and write recolored files locally.
+Nothing is redistributed via GitHub/Nexus source repos.
 """
 
 from __future__ import annotations
@@ -21,18 +22,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 PALETTE_PATH = ROOT / "assets" / "palette.json"
-
-# Relative paths under LooseSprites/ (no extension)
-UI_TARGETS = [
-    "Cursors",
-    "DialogBox",
-    "font_bold",
-    "font_colored",
-    "daybg",
-    "nightbg",
-    "ChatButtons",
-    "JournalIcons",
-]
+TARGETS_PATH = ROOT / "tools" / "targets.json"
 
 
 def load_palette() -> dict[str, tuple[int, int, int]]:
@@ -48,6 +38,17 @@ def load_palette() -> dict[str, tuple[int, int, int]]:
             int(hex_color[4:6], 16),
         )
     return out
+
+
+def load_target_folders() -> dict[str, list[str]]:
+    data = json.loads(TARGETS_PATH.read_text(encoding="utf-8"))
+    result: dict[str, list[str]] = {}
+    for folder, entries in data.items():
+        if isinstance(entries, dict):
+            result[folder] = list(entries.keys())
+        else:
+            result[folder] = list(entries)
+    return result
 
 
 def rgb_to_hsl(r: int, g: int, b: int) -> tuple[float, float, float]:
@@ -79,9 +80,8 @@ def pick_dracula_color(
 ) -> tuple[int, int, int]:
     hue, saturation, lightness = rgb_to_hsl(r, g, b)
 
-    # Preserve saturated accent pixels (icons, hearts, stamina, etc.)
     if saturation > 0.35 and lightness > 0.12 and lightness < 0.92:
-        if hue < 0.08 or hue > 0.95 or (0.0 <= hue < 0.02):
+        if hue < 0.08 or hue > 0.95:
             return palette["red"]
         if 0.08 <= hue < 0.18:
             return palette["orange"]
@@ -97,7 +97,6 @@ def pick_dracula_color(
             return palette["pink"]
         return palette["purple"]
 
-    # Low-sat UI chrome: map luminance to Dracula surfaces / text
     if lightness >= 0.82:
         return palette["foreground"]
     if lightness >= 0.58:
@@ -123,9 +122,10 @@ def recolor_image(image: Image.Image, palette: dict[str, tuple[int, int, int]]) 
     return rgba
 
 
-def resolve_input_file(input_dir: Path, name: str) -> Path | None:
+def resolve_input_file(input_root: Path, folder: str, name: str) -> Path | None:
+    folder_path = input_root / folder
     for ext in (".png", ".PNG"):
-        candidate = input_dir / f"{name}{ext}"
+        candidate = folder_path / f"{name}{ext}"
         if candidate.is_file():
             return candidate
     return None
@@ -133,25 +133,25 @@ def resolve_input_file(input_dir: Path, name: str) -> Path | None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Build Dracula UI PNGs from your own unpacked Stardew LooseSprites."
+        description="Build Dracula UI PNGs from your unpacked Stardew Valley Content."
     )
     parser.add_argument(
         "--input",
         type=Path,
-        required=True,
-        help="Folder with vanilla PNGs extracted from YOUR game (e.g. tools/unpacked/LooseSprites)",
+        default=ROOT / "tools" / "unpacked",
+        help="Root of unpacked Content (contains LooseSprites/, Maps/, etc.)",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "assets" / "ui" / "LooseSprites",
-        help="Output folder (default: assets/ui/LooseSprites)",
+        default=ROOT / "assets" / "ui",
+        help="Output root (default: assets/ui)",
     )
     parser.add_argument(
         "--only",
         nargs="*",
         default=None,
-        help="Optional subset of asset names (e.g. Cursors DialogBox)",
+        help="Optional asset names to limit processing",
     )
     args = parser.parse_args()
 
@@ -160,36 +160,39 @@ def main() -> int:
         return 1
 
     palette = load_palette()
-    args.output.mkdir(parents=True, exist_ok=True)
+    target_folders = load_target_folders()
+    only = set(args.only) if args.only else None
 
-    targets = args.only if args.only else UI_TARGETS
     processed = 0
     skipped: list[str] = []
 
-    for name in targets:
-        source = resolve_input_file(args.input, name)
-        if source is None:
-            skipped.append(name)
-            continue
+    for folder, names in target_folders.items():
+        for name in names:
+            if only and name not in only:
+                continue
 
-        out_path = args.output / f"{name}.png"
-        image = Image.open(source)
-        recolored = recolor_image(image, palette)
-        recolored.save(out_path)
-        print(f"OK  {source.name} -> {out_path.relative_to(ROOT)}")
-        processed += 1
+            source = resolve_input_file(args.input, folder, name)
+            if source is None:
+                skipped.append(f"{folder}/{name}")
+                continue
+
+            out_dir = args.output / folder
+            out_dir.mkdir(parents=True, exist_ok=True)
+            out_path = out_dir / f"{name}.png"
+
+            recolored = recolor_image(Image.open(source), palette)
+            recolored.save(out_path)
+            print(f"OK  {folder}/{source.name} -> {out_path.relative_to(ROOT)}")
+            processed += 1
 
     if processed == 0:
-        print(
-            "No PNGs processed. Extract LooseSprites from your game copy first — see tools/README.md",
-            file=sys.stderr,
-        )
+        print("No PNGs processed. Run .\\setup.ps1 first.", file=sys.stderr)
         return 1
 
     if skipped:
-        print(f"Skipped (not found): {', '.join(skipped)}")
+        print(f"Skipped ({len(skipped)}): {', '.join(skipped[:12])}" + ("..." if len(skipped) > 12 else ""))
 
-    print(f"\nDone. {processed} file(s) written. Launch the game — Content Patcher loads them automatically.")
+    print(f"\nDone. {processed} file(s) written.")
     return 0
 
 
