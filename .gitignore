@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Stardew / modding scratch
+*.xnb
+*.zip
+*.7z
+/unpacked/
+/export/
+/temp/
+
+# Secrets
+.env
+.env.*

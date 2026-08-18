@@ -1,0 +1,82 @@
+{
+  "Name": "Dracula",
+
+  "ColorVariables": {
+    "Text": "#f8f8f2",
+    "TextShadow": "#44475a",
+    "TextShadowAlt": "#282a36",
+    "ErrorText": "#ff5555",
+    "Hover": "#bd93f9",
+    "ButtonHover": "#6272a4",
+    "UnselectedOption": "#6272a4",
+    "Health": "#50fa7b",
+    "Stamina": "#ffb86c",
+    "Money": "#f1fa8c",
+    "Experience": "#8be9fd",
+    "Quest": "#ff79c6",
+    "Link": "#8be9fd"
+  },
+
+  "SpriteTextColorSets": {
+    "*": {
+      "default": "#f8f8f2",
+      "skyblue": "#8be9fd",
+      "red": "#ff5555",
+      "#6E2BFF": "#bd93f9",
+      "white": "#f8f8f2",
+      "orangered": "#ffb86c",
+      "limegreen": "#50fa7b",
+      "cyan": "#8be9fd",
+      "#3c3c3c": "#6272a4",
+      "jojablue": "#6272a4"
+    }
+  },
+
+  "IndexedSpriteTextColors": {
+    "-1": "#f8f8f2",
+    "1": "#8be9fd",
+    "2": "#ff5555",
+    "3": "#bd93f9",
+    "4": "#f8f8f2",
+    "5": "#ffb86c",
+    "6": "#50fa7b",
+    "7": "#8be9fd",
+    "8": "#6272a4",
+    "9": "#6272a4"
+  },
+
+  "Patches": [
+    "AboutMenu",
+    "AnimalPage",
+    "AnimalQueryMenu",
+    "Billboard",
+    "BobberBar",
+    "BuildingPaintMenu",
+    "BuildingSkinMenu",
+    "CarpenterMenu",
+    "CharacterCustomization",
+    "CollectionsPage",
+    "CoopMenu",
+    "DayTimeMoneyBox",
+    "DrawHud",
+    "ExitPage",
+    "ForgeMenu",
+    "GMCM_Dropdown",
+    "ItemTooltips",
+    "LetterViewerMenu",
+    "LevelUpMenu",
+    "LoadGameMenu",
+    "MineElevatorMenu",
+    "MineShaft",
+    "MoneyDial",
+    "OptionsDropDown",
+    "PowersTab",
+    "PrairieKing",
+    "QuestLog",
+    "ShopMenu",
+    "SkillsPage",
+    "SpecialOrdersBoard",
+    "TutorialMenu",
+    "VolcanoDungeon"
+  ]
+}

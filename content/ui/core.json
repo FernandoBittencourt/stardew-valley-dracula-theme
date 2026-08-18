@@ -1,0 +1,27 @@
+[
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/ui/LooseSprites/Cursors.png"
+  },
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/DialogBox",
+    "FromFile": "assets/ui/LooseSprites/DialogBox.png"
+  },
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/font_bold",
+    "FromFile": "assets/ui/LooseSprites/font_bold.png"
+  },
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/daybg",
+    "FromFile": "assets/ui/LooseSprites/daybg.png"
+  },
+  {
+    "Action": "Load",
+    "Target": "LooseSprites/nightbg",
+    "FromFile": "assets/ui/LooseSprites/nightbg.png"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "Name": "Dracula UI",
+  "Author": "Fernando Bittencourt",
+  "Version": "0.1.0",
+  "Description": "Dark Dracula-themed UI for Stardew Valley — menus, HUD colors, and texture overrides inspired by dracula/minecraft.",
+  "UniqueID": "FernandoBittencourt.DraculaUI",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:???", "GitHub:FernandoBittencourt/stardew-valley-dracula-theme" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    { "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": true },
+    { "UniqueID": "leclair.thememanager", "IsRequired": true }
+  ],
+  "stardew:theme": "theme.json"
+}
