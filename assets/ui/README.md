@@ -1,32 +1,34 @@
-# UI assets
+# UI assets (local build)
 
-Place recolored or redesigned PNG files here, mirroring Stardew Valley content paths.
+This folder holds **locally generated** PNGs. They are **not** in the Git repository.
 
-## Priority targets (v0.1)
+## Why?
 
-| File | Game target | Notes |
-|------|-------------|-------|
-| `LooseSprites/Cursors.png` | Mouse cursor atlas | High visibility |
-| `LooseSprites/DialogBox.png` | NPC dialogue boxes | Core UI |
-| `LooseSprites/font_bold.png` | Large menu text | Works with Theme Manager `-1` color |
-| `LooseSprites/daybg.png` | Day HUD background | Top bar |
-| `LooseSprites/nightbg.png` | Night HUD background | Top bar |
+Stardew Valley sprites © ConcernedApe. We do not redistribute vanilla or recolored game art.
 
-## Palette
+## How to populate
 
-Use values from [`palette.json`](../palette.json). Follow the same philosophy as [dracula/minecraft](https://github.com/dracula/minecraft):
+Run the build tool against PNGs extracted from **your** game install:
 
-- Dark panels on `#282a36` / `#44475a`
-- Primary text `#f8f8f2`
-- Accents: purple hover, cyan links, green health, orange stamina
+```powershell
+pip install -r tools/requirements.txt
+python tools/recolor_ui.py --input tools/unpacked/LooseSprites
+```
 
-## Extracting vanilla assets
+Full steps: [`tools/README.md`](../../tools/README.md)
 
-1. Install [SMAPI](https://smapi.io/) and run the game once.
-2. Use [xNB Node](https://github.com/LeonBlade/xnbcli) or unpack tools from the modding wiki.
-3. Export from `Stardew Valley/Content/LooseSprites/` as reference.
-4. Edit in Aseprite, Photoshop, or similar — **do not redistribute raw vanilla files**.
+## Priority files
 
-## Enable in-game
+| Output | Game target |
+|--------|-------------|
+| `LooseSprites/Cursors.png` | Mouse cursor |
+| `LooseSprites/DialogBox.png` | Dialogue boxes |
+| `LooseSprites/daybg.png` | Day HUD bar |
+| `LooseSprites/nightbg.png` | Night HUD bar |
+| `LooseSprites/font_bold.png` | Large menu text |
 
-Set `EnableTextureOverrides` to `true` in Generic Mod Config Menu (or `config.json`) once PNGs exist in this folder.
+## Original art
+
+If you draw **original** UI replacements (not derived from vanilla), those may be committed — open a PR and note they are your own work.
+
+Palette reference: [`palette.json`](../palette.json)

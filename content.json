@@ -1,19 +1,9 @@
 {
   "Format": "2.9.0",
-  "ConfigSchema": {
-    "EnableTextureOverrides": {
-      "AllowValues": "true, false",
-      "Default": "false",
-      "Description": "Replace UI PNG assets with Dracula-themed versions (work in progress)."
-    }
-  },
   "Changes": [
     {
       "Action": "Include",
-      "FromFile": "content/ui/*.json",
-      "When": {
-        "EnableTextureOverrides": true
-      }
+      "FromFile": "content/ui/*.json"
     }
   ]
 }

@@ -27,10 +27,9 @@ Adjust `ColorVariables`, test in-game, screenshot before/after. Reference [Theme
 
 ### Textures (`assets/ui/`)
 
-1. Read [`assets/ui/README.md`](assets/ui/README.md).
-2. Add PNGs under the matching path.
-3. Register targets in `content/ui/*.json` if adding new files.
-4. Set `EnableTextureOverrides` to `true` to test.
+1. Read [`tools/README.md`](tools/README.md) — **never commit vanilla or recolored game PNGs**.
+2. Improve `tools/recolor_ui.py` mapping logic, or contribute **original** pixel art you created.
+3. Register new targets in `content/ui/*.json` with `HasFile` conditions.
 
 ### Mod compatibility
 

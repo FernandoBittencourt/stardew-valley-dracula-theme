@@ -10,8 +10,8 @@ Dark UI theme for [Stardew Valley](https://www.stardewvalley.net/), inspired by 
 
 | Layer | Tool | Status |
 |-------|------|--------|
-| Text, bars, HUD colors | [Theme Manager](https://www.nexusmods.com/stardewvalley/mods/14525) | **v0.1 — ready to test** |
-| Menu textures, cursor, dialogue boxes | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | **Work in progress** |
+| Text, bars, HUD colors | [Theme Manager](https://www.nexusmods.com/stardewvalley/mods/14525) | **Ready** |
+| Menu textures, cursor, dialogue boxes | [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) | **Build locally** (see below) |
 
 The world (farms, NPCs, items on the ground) stays vanilla.
 
@@ -33,9 +33,15 @@ Optional: [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods
 5. Open **Theme Manager** (via GMCM or `config.json`) and select **Dracula**.
 6. If colors look stale, open the SMAPI console and run: `retheme`
 
-### Texture overrides (optional, WIP)
+### UI textures (copyright-safe)
 
-When PNG assets are added under `assets/ui/`, enable **EnableTextureOverrides** in mod config.
+This repo **does not ship** Stardew artwork. To apply Dracula textures:
+
+1. Extract UI PNGs from **your** game copy (see [`tools/README.md`](tools/README.md)).
+2. Run `python tools/recolor_ui.py --input tools/unpacked/LooseSprites`.
+3. Launch the game — Content Patcher loads generated files from `assets/ui/` automatically.
+
+Do **not** commit or redistribute generated PNGs.
 
 ## Dracula palette
 
@@ -61,7 +67,8 @@ manifest.json      → mod metadata + Theme Manager hook
 theme.json         → Dracula color variables (Theme Manager)
 content.json       → Content Patcher entry point
 content/ui/        → texture patch definitions
-assets/ui/         → PNG assets (contributors add these)
+assets/ui/         → locally generated PNGs (gitignored)
+tools/recolor_ui.py → build script (uses your game files)
 assets/palette.json
 ```
 
